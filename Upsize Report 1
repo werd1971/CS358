@@ -1,0 +1,4423 @@
+
+
+
+
+    Upsizing Wizard Report
+
+
+
+Database
+
+
+            Microsoft Access Database:   C:\Users\Owner\Downloads\tpData (1).mdb
+                  SQL Server Database:   tpData (1)SQL
+
+
+
+
+
+
+
+
+
+Upsizing Parameters
+
+
+          Table Attributes to Export
+
+              Indexes                             Table relationships:
+
+              Validation rules                    Upsized using DRI
+
+              Defaults
+
+              Structure only, no data             Timestamp fields added:
+
+                                                  Some tables
+
+
+          Modifications to Existing Database
+
+
+              Attach newly created SQL               Save password and user
+              Server tables                          ID with attached tables
+
+
+
+          Client/Server Modifications
+
+
+              Create a new Access                    Save password and
+              client/server application.             user ID with application
+
+
+
+
+Tables
+
+
+         Table: tblAccessRightsCompany
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblAccessRightsCompany_loca           tblAccessRightsCompany
+
+           Attached Table    tblAccessRightsCompany
+                     Name:
+           Aliasing Query:
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+                                                            - 1 -                                             30-Jan-14
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxAccessCompany                  idxAccessCompany
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrAccessUser                     ptrAccessUser
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrCompany                        ptrCompany
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: EditEnable                        EditEnable
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxAccessCompany                   idxAccessCompany
+
+                      Fields: idxAccessCompany                   idxAccessCompany
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: tblAccessUserstblAccessRigh        tblAccessUserstblAccessRightsC
+                              tsCompany
+
+                      Fields: ptrAccessUser                      ptrAccessUser
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+                        Name: tblCompanytblAccessRightsC         tblCompanytblAccessRightsCom
+                      Fields: ptrCompany                         ptrCompany
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 2 -                                             30-Jan-14
+
+         Table: tblAccessRightsDepartment
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblAccessRightsDepartment_lo          tblAccessRightsDepartment
+
+           Attached Table    tblAccessRightsDepartment
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxAccessDepartment               idxAccessDepartment
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrAccessUser                     ptrAccessUser
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDepartment                     ptrDepartment
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: EditEnable                        EditEnable
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxAccessDepartment                idxAccessDepartment
+
+                      Fields: idxAccessDepartment                idxAccessDepartment
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+                        Name: tblAccessUserstblAccessRigh        tblAccessUserstblAccessRightsD
+                              tsDepartment                       epartment
+                      Fields: ptrAccessUser                      ptrAccessUser
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: tblDepartmenttblAccessRight        tblDepartmenttblAccessRightsDe
+                              sDepartment                        partment
+
+                      Fields: ptrDepartment                      ptrDepartment
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 3 -                                             30-Jan-14
+
+         Table: tblAccessRightsLocation
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblAccessRightsLocation_local         tblAccessRightsLocation
+
+           Attached Table    tblAccessRightsLocation
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxAccessLocation                 idxAccessLocation
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrAccessUser                     ptrAccessUser
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrLocation                       ptrLocation
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: EditEnable                        EditEnable
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxAccessLocation                  idxAccessLocation
+
+                      Fields: idxAccessLocation                  idxAccessLocation
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+                        Name: tblAccessUserstblAccessRigh        tblAccessUserstblAccessRightsL
+                              tsLocation
+                      Fields: ptrAccessUser                      ptrAccessUser
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: tblLocationtblAccessRightsLo       tblLocationtblAccessRightsLocati
+
+                      Fields: ptrLocation                        ptrLocation
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 4 -                                             30-Jan-14
+
+         Table: tblAccessRightsShift
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblAccessRightsShift_local            tblAccessRightsShift
+
+           Attached Table    tblAccessRightsShift
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxAccessShift                    idxAccessShift
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrAccessUser                     ptrAccessUser
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrShift                          ptrShift
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: EditEnable                        EditEnable
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxShift                           idxShift
+
+                      Fields: idxAccessShift                     idxAccessShift
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+                        Name: tblAccessUserstblAccessRigh        tblAccessUserstblAccessRightsS
+                      Fields: ptrAccessUser                      ptrAccessUser
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: tblShifttblAccessRightsShift       tblShifttblAccessRightsShift
+
+                      Fields: ptrShift                           ptrShift
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 5 -                                             30-Jan-14
+
+         Table: tblAccessUsers
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblAccessUsers_local                  tblAccessUsers
+
+           Attached Table    tblAccessUsers
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxAccessUser                     idxAccessUser
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: LoginName                         LoginName
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: Password                          Password
+                      Data Type: Text(20)                          nvarchar(20)
+
+
+                     Field Name: NameFirst                         NameFirst
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+                     Field Name: NameLast                          NameLast
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: AdminRights                       AdminRights
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: AccessHardware                    AccessHardware
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: AccessCompany                     AccessCompany
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: AccessDepartment                  AccessDepartment
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: AccessShift                       AccessShift
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: AccessLocation                    AccessLocation
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: SortPriority                      SortPriority
+                      Data Type: Number (Long)                     int
+
+
+
+
+                                                            - 6 -                                             30-Jan-14
+
+         Indexes             Microsoft Access                    SQL Server
+
+
+                        Name: PrimaryKey                         PrimaryKey
+                      Fields: idxAccessUser                      idxAccessUser
+
+                        Type: Unique                             Unique
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 7 -                                             30-Jan-14
+
+         Table: tblCompany
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblCompany_local                      tblCompany
+
+           Attached Table    tblCompany
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxCompany                        idxCompany
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NameCompany                       NameCompany
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: PayCycle                          PayCycle
+                      Data Type: Text(20)                          nvarchar(20)
+
+
+                     Field Name: WeekDefinition                    WeekDefinition
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: DayFirst                          DayFirst
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: DayLast                           DayLast
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: TimePeriod                        TimePeriod
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: Address                           Address
+
+                      Data Type: Text(255)                         nvarchar(255)
+
+
+                     Field Name: Phone                             Phone
+                      Data Type: Text(25)                          nvarchar(25)
+
+
+                     Field Name: Fax                               Fax
+
+                      Data Type: Text(25)                          nvarchar(25)
+
+                     Field Name: TaxID                             TaxID
+
+                      Data Type: Text(20)                          nvarchar(20)
+
+
+                     Field Name: FedID                             FedID
+                      Data Type: Text(20)                          nvarchar(20)
+
+
+
+
+                                                            - 8 -                                             30-Jan-14
+
+                     Field Name: StateID                           StateID
+
+                      Data Type: Text(20)                          nvarchar(20)
+
+
+                     Field Name: SICCode                           SICCode
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: InBuffer                          InBuffer
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: OutBuffer                         OutBuffer
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: RoundingType                      RoundingType
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: RoundingMinutes                   RoundingMinutes
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: SortPriority                      SortPriority
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Deleted                           Deleted
+                      Data Type: Yes/No                            bit
+
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: FedID                              FedID
+                      Fields: FedID                              FedID
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: idxCompany                         idxCompany
+
+                      Fields: idxCompany                         idxCompany
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: SICCode                            SICCode
+
+                      Fields: SICCode                            SICCode
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+                        Name: StateID                            StateID
+                      Fields: StateID                            StateID
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: TaxID                              TaxID
+
+                      Fields: TaxID                              TaxID
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+                                                            - 9 -                                             30-Jan-14
+
+         Table: tblDaily
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblDaily_local                        tblDaily
+
+           Attached Table    tblDaily
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxDay                            idxDay
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: DayDate                           DayDate
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Trans1                            Trans1
+                      Data Type: Text(7)                           nvarchar(7)
+
+
+                     Field Name: Trans2                            Trans2
+
+                      Data Type: Text(7)                           nvarchar(7)
+
+                     Field Name: Trans3                            Trans3
+
+                      Data Type: Text(7)                           nvarchar(7)
+
+
+                     Field Name: Trans4                            Trans4
+                      Data Type: Text(7)                           nvarchar(7)
+
+
+                     Field Name: In1Time                           In1Time
+
+                      Data Type: Text(10)                          nvarchar(10)
+
+                     Field Name: Out1Time                          Out1Time
+
+                      Data Type: Text(10)                          nvarchar(10)
+
+
+                     Field Name: In2Time                           In2Time
+                      Data Type: Text(10)                          nvarchar(10)
+
+
+                     Field Name: Out2Time                          Out2Time
+
+                      Data Type: Text(10)                          nvarchar(10)
+
+                     Field Name: In3Time                           In3Time
+
+                      Data Type: Text(10)                          nvarchar(10)
+
+
+                     Field Name: Out3Time                          Out3Time
+                      Data Type: Text(10)                          nvarchar(10)
+
+
+
+
+                                                            - 10 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: In4Time                           In4Time
+
+                      Data Type: Text(10)                          nvarchar(10)
+                     Field Name: Out4Time                   - 11 -      ime                                   30-Jan-14
+                      Data Type: Text(10)                          nvarchar(10)
+Reg                  Field Name:                    Reg                              Reg
+
+         Indexes             Microsoft Access                    SQL Server
+
+
+                        Name: idxDay                             idxDay
+                      Fields: idxDay                             idxDay
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 12 -                                            30-Jan-14
+
+         Table: tblDayParts
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblDayParts_local                     tblDayParts
+
+           Attached Table    tblDayParts
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxDayPart                        idxDayPart
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: PayrateIndex                      PayrateIndex
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: PayrateName                       PayrateName
+                      Data Type: Text(25)                          nvarchar(25)
+
+
+                     Field Name: PayRateMult                       PayRateMult
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: PayRateAddition                   PayRateAddition
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: Enable1Mon                        Enable1Mon
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: Enable1Tue                        Enable1Tue
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Enable1Wed                        Enable1Wed
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: Enable1Thu                        Enable1Thu
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: Enable1Fri                        Enable1Fri
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Enable1Sat                        Enable1Sat
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: Enable1Sun                        Enable1Sun
+                      Data Type: Yes/No                            bit
+
+
+
+
+                                                            - 13 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: Enable1Hol                        Enable1Hol
+                      Data Type: Yes/No                            bit
+                                                            - 14 -                                            30-Jan-14
+                     Field Name: Start1Mon                         Start1Mon
+                      Data Type: Date/Time                         datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: End1Hol                           End1Hol
+                      Data Type: Date/Time                         datetime
+                                                            - 15 -                                            30-Jan-14
+                     Field Name: Enable2Mon                        Enable2Mon
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Start2Hol                         Start2Hol
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: End2Mon                           End2Mon
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: End2Tue                           End2Tue
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: End2Wed                           End2Wed
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: End2Thu                           End2Thu
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: End2Fri                           End2Fri
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: End2Sat                           End2Sat
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: End2Sun                           End2Sun
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: End2Hol                           End2Hol
+
+                      Data Type: Date/Time                         datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 16 -                                            30-Jan-14
+
+         Table: tblDepartment
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblDepartment_local                   tblDepartment
+
+           Attached Table    tblDepartment
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxDepartment                     idxDepartment
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NameDepartment                    NameDepartment
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: SortPriority                      SortPriority
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Deleted                           Deleted
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxDepartment                      idxDepartment
+
+                      Fields: idxDepartment                      idxDepartment
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 17 -                                            30-Jan-14
+
+         Table: tblHolidays
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblHolidays_local                     tblHolidays
+
+           Attached Table    tblHolidays
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxHoliday                        idxHoliday
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NameHoliday                       NameHoliday
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: ScheduleHours                     ScheduleHours
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: Birthday                          Birthday
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Date1                             Date1
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date2                             Date2
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date3                             Date3
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: Date4                             Date4
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date5                             Date5
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date6                             Date6
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: Date7                             Date7
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date8                             Date8
+                      Data Type: Date/Time                         datetime
+
+
+
+
+                                                            - 18 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: Date9                             Date9
+                      Data Type: Date/Time                         datetime
+                                                            - 19 -                                            30-Jan-14
+                     Field Name: Date10                            Date10
+                      Data Type: Date/Time                         datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: Date5Hours                        Date5Hours
+                      Data Type: Number (Long)                     int
+                                                            - 20 -                                            30-Jan-14
+                     Field Name: Date6Hours                        Date6Hours
+                      Data Type: Number (Long)                     int
+
+                     Field Name: BirthdayHours                     BirthdayHours
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: SortPriority                      SortPriority
+                      Data Type: Number (Long)                     int
+
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxHoliday                         idxHoliday
+                      Fields: idxHoliday                         idxHoliday
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 21 -                                            30-Jan-14
+
+         Table: tblJob
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblJob_local                          tblJob
+
+           Attached Table    tblJob
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxJob                            idxJob
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: JobNumber                         JobNumber
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ShortDescription                  ShortDescription
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+                     Field Name: LongDescription                   LongDescription
+
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxJob                             idxJob
+
+                      Fields: idxJob                             idxJob
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+                        Name: JobNumber                          JobNumber
+                      Fields: JobNumber                          JobNumber
+
+                        Type: Unique                             Unique
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 22 -                                            30-Jan-14
+
+         Table: tblJury
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblJury_local                         tblJury
+
+           Attached Table    tblJury
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxJury                           idxJury
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ShortDescription                  ShortDescription
+
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+                     Field Name: LongDescription                   LongDescription
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+                                                                 SQL Server
+         Indexes             Microsoft Access
+
+                        Name: idxJury                            idxJury
+                      Fields: idxJury                            idxJury
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 23 -                                            30-Jan-14
+
+         Table: tblLocation
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblLocation_local                     tblLocation
+
+           Attached Table    tblLocation
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxLocation                       idxLocation
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NameLocation                      NameLocation
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: SortPriority                      SortPriority
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Deleted                           Deleted
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxLocation                        idxLocation
+
+                      Fields: idxLocation                        idxLocation
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 24 -                                            30-Jan-14
+
+         Table: tblMessages
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblMessages_local                     tblMessages
+
+           Attached Table    tblMessages
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxMessage                        idxMessage
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: PtrProfile                        PtrProfile
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: Message                           Message
+                      Data Type: Text(255)                         nvarchar(255)
+
+
+                                                                 SQL Server
+         Indexes             Microsoft Access
+
+                        Name: idxMessage                         idxMessage
+                      Fields: idxMessage                         idxMessage
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 25 -                                            30-Jan-14
+
+         Table: tblOvertime
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblOvertime_local                     tblOvertime
+
+           Attached Table    tblOvertime
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxOvertime                       idxOvertime
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NameOvertime                      NameOvertime
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: IncludeVacation                   IncludeVacation
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: IncludeSick                       IncludeSick
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: IncludeHoliday                    IncludeHoliday
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: IncludePTO                        IncludePTO
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: IncludeJury                       IncludeJury
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: IncludeBereavement                IncludeBereavement
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: Rate1Multiplier                   Rate1Multiplier
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: Rate1DayEnable                    Rate1DayEnable
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Rate1DayHours                     Rate1DayHours
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Rate1WeekEnable                   Rate1WeekEnable
+                      Data Type: Yes/No                            bit
+
+
+
+
+                                                            - 26 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: Rate1WeekHours                    Rate1WeekHours
+                      Data Type: Number (Long)                     int
+                                                            - 27 -                                            30-Jan-14
+                     Field Name: Rate1HolidayEnable                Rate1HolidayEnable
+                      Data Type: Yes/No                            bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: Rate2HolidayEnable                Rate2HolidayEnable
+                      Data Type: Yes/No                            bit
+                                                            - 28 -                                            30-Jan-14
+                     Field Name: Rate2HolidayHours                 Rate2HolidayHours
+                      Data Type: Number (Long)                     int
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: Rate3HolidayHours                 Rate3HolidayHours
+                      Data Type: Number (Long)                     int
+                                                            - 29 -                                            30-Jan-14
+                     Field Name: Rate37thDayEnable                 Rate37thDayEnable
+                      Data Type: Yes/No                            bit
+
+                     Field Name: ptrDayPart1                       ptrDayPart1
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDayPart2                       ptrDayPart2
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDayPart3                       ptrDayPart3
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrDayPart4                       ptrDayPart4
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDayPart5                       ptrDayPart5
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDayPart6                       ptrDayPart6
+
+                      Data Type: Number (Double)                   float
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxOvertime                        idxOvertime
+
+                      Fields: idxOvertime                        idxOvertime
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 30 -                                            30-Jan-14
+
+         Table: tblPayType
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblPayType_local                      tblPayType
+
+           Attached Table    tblPayType
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxPayType                        idxPayType
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NamePayType                       NamePayType
+
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: OTQualify                         OTQualify
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: ptrOvertime                       ptrOvertime
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: SickQualify                       SickQualify
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: VacQualify                        VacQualify
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: HolQualify                        HolQualify
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: PTOQualify                        PTOQualify
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: JuryQualify                       JuryQualify
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: BereavementQualify                BereavementQualify
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Hourly                            Hourly
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: SalaryFixed                       SalaryFixed
+                      Data Type: Yes/No                            bit
+
+
+
+
+                                                            - 31 -                                            30-Jan-14
+
+                     Field Name: SalaryHours                       SalaryHours
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: SortPriority                      SortPriority
+                      Data Type: Number (Long)                     int
+
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxPayType                         idxPayType
+                      Fields: idxPayType                         idxPayType
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: tblOvertimetblPayType              tblOvertimetblPayType
+
+                      Fields: ptrOvertime                        ptrOvertime
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 32 -                                            30-Jan-14
+
+         Table: tblPerson
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblPerson_local                       tblPerson
+
+           Attached Table    tblPerson
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxPerson                         idxPerson
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: NameLast                          NameLast
+
+                      Data Type: Text(25)                          nvarchar(25)
+
+
+                     Field Name: NameFirst                         NameFirst
+                      Data Type: Text(25)                          nvarchar(25)
+
+
+                     Field Name: NameMiddle                        NameMiddle
+
+                      Data Type: Text(25)                          nvarchar(25)
+
+                     Field Name: NameLong                          NameLong
+
+                      Data Type: Text(75)                          nvarchar(75)
+
+
+                     Field Name: Address                           Address
+                      Data Type: Text(255)                         nvarchar(255)
+
+
+                     Field Name: SSN                               SSN
+
+                      Data Type: Text(15)                          nvarchar(15)
+
+                     Field Name: DateBirth                         DateBirth
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Phone                             Phone
+                      Data Type: Text(25)                          nvarchar(25)
+
+
+                     Field Name: Deleted                           Deleted
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxPerson                          idxPerson
+
+                      Fields: idxPerson                          idxPerson
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+                                                            - 33 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 34 -                                            30-Jan-14
+
+         Table: tblProfile
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblProfile_local                      tblProfile
+
+           Attached Table    tblProfile
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxProfile                        idxProfile
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrPerson                         ptrPerson
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: UserID                            UserID
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: NameDisplay                       NameDisplay
+
+                      Data Type: Text(15)                          nvarchar(15)
+
+                     Field Name: NameLong                          NameLong
+
+                      Data Type: Text(75)                          nvarchar(75)
+
+
+                     Field Name: iButton                           iButton
+                      Data Type: Text(16)                          nvarchar(16)
+
+
+                     Field Name: iButtonFamily                     iButtonFamily
+
+                      Data Type: Text(2)                           nvarchar(2)
+
+                     Field Name: iButtonCS                         iButtonCS
+
+                      Data Type: Text(2)                           nvarchar(2)
+
+
+                     Field Name: iButtonColor                      iButtonColor
+                      Data Type: Text(15)                          nvarchar(15)
+
+
+                     Field Name: Active                            Active
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: ProfileType                       ProfileType
+
+                      Data Type: Number (Integer)                  smallint
+
+
+                     Field Name: IDEnable                          IDEnable
+                      Data Type: Yes/No                            bit
+
+
+
+
+                                                            - 35 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: PIN                               PIN
+                      Data Type: Number (Long)                     int
+                                                            - 36 -                                            30-Jan-14
+                     Field Name: PINEnable                         PINEnable
+                      Data Type: Yes/No                            bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: ptrPayType                        ptrPayType
+                      Data Type: Number (Double)                   float
+                                                            - 37 -                                            30-Jan-14
+                     Field Name: ptrHoliday                        ptrHoliday
+                      Data Type: Number (Double)                   float
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: PayRate6                          PayRate6
+                      Data Type: Currency                          money
+                                                            - 38 -                                            30-Jan-14
+         Indexes             Microsoft Access                    SQL Server
+                        Name: AltID                              AltID
+
+                        Name: UserID                             UserID
+
+                      Fields: UserID                             UserID
+
+                        Type: Unique                             Unique
+
+
+
+         Table: tblPTO
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblPTO_local                          tblPTO
+
+           Attached Table    tblPTO
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxPTO                            idxPTO
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ShortDescription                  ShortDescription
+
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+                     Field Name: LongDescription                   LongDescription
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxPTO                             idxPTO
+                      Fields: idxPTO                             idxPTO
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 39 -                                            30-Jan-14
+
+         Table: tblShift
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblShift_local                        tblShift
+
+           Attached Table    tblShift
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxShift                          idxShift
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrCustomShift                    ptrCustomShift
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: NameShift                         NameShift
+                      Data Type: Text(30)                          nvarchar(30)
+
+
+                     Field Name: EnableLunches                     EnableLunches
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: EnableAuto                        EnableAuto
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: AutoShiftLen                      AutoShiftLen
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: AutoTimeTilLunch                  AutoTimeTilLunch
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: AutoLunchLen                      AutoLunchLen
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: EnableMon                         EnableMon
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableTue                         EnableTue
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: EnableWed                         EnableWed
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableThu                         EnableThu
+                      Data Type: Yes/No                            bit
+
+
+
+
+                                                            - 40 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: EnableFri                         EnableFri
+                      Data Type: Yes/No                            bit
+                                                            - 41 -                                            30-Jan-14
+                     Field Name: EnableSat                         EnableSat
+                      Data Type: Yes/No                            bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: EndSun                            EndSun
+                      Data Type: Date/Time                         datetime
+                                                            - 42 -                                            30-Jan-14
+                     Field Name: LunchBeginMon                     LunchBeginMon
+                      Data Type: Date/Time                         datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: SnapInBeforeEnable                SnapInBeforeEnable
+                      Data Type: Yes/No                            bit
+                                                            - 43 -                                            30-Jan-14
+                     Field Name: SnapInBeforeTime                  SnapInBeforeTime
+                      Data Type: Number (Long)                     int
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: InEarlyEnable                     InEarlyEnable
+                      Data Type: Yes/No                            bit
+                                                            - 44 -                                            30-Jan-14
+                     Field Name: InEarlyTime                       InEarlyTime
+                      Data Type: Number (Long)                     int
+
+                     Field Name: SortPriority                      SortPriority
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Deleted                           Deleted
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: BreakTime                         BreakTime
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: EnableIgnore                      EnableIgnore
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: ExcessTime                        ExcessTime
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: EnableExcess                      EnableExcess
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxShift                           idxShift
+
+                      Fields: idxShift                           idxShift
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 45 -                                            30-Jan-14
+
+         Table: tblSystem
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblSystem_local                       tblSystem
+
+           Attached Table    tblSystem
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxSystem                         idxSystem
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: DBVersion                         DBVersion
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: Job1Enable                        Job1Enable
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: UserDefined1Enable                UserDefined1Enable
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: Data1PromptText                   Data1PromptText
+
+                      Data Type: Text(35)                          nvarchar(35)
+
+
+                     Field Name: Data1PromptLength                 Data1PromptLength
+                      Data Type: Number (Integer)                  smallint
+
+
+                     Field Name: UserIDLength                      UserIDLength
+
+                      Data Type: Number (Integer)                  smallint
+
+                     Field Name: TimeBeforeAutoLunch               TimeBeforeAutoLunch
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: StartDatePeriod                   StartDatePeriod
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: EndDatePeriod                     EndDatePeriod
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: InBuffer                          InBuffer
+
+                      Data Type: Number (Integer)                  smallint
+
+
+                     Field Name: OutBuffer                         OutBuffer
+                      Data Type: Number (Integer)                  smallint
+
+
+
+
+                                                            - 46 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: SerialNumber                      SerialNumber
+                      Data Type: Text(21)                          nvarchar(21)
+                                                            - 47 -                                            30-Jan-14
+                     Field Name: RegistrationDate                  RegistrationDate
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: NeedsToBeCalculated               NeedsToBeCalculated
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: SupportRegistration               SupportRegistration
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+                     Field Name: SuppressVetroWizard               SuppressVetroWizard
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: SuppressSalaryInsert              SuppressSalaryInsert
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: AllowMultipleAutoLunch            AllowMultipleAutoLunch
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableFixedPayRateAmount          EnableFixedPayRateAmount
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: EnableCloudConnection             EnableCloudConnection
+
+                      Data Type: Yes/No                            bit
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: PostalCode                         PostalCode
+
+                      Fields: PostalCode                         PostalCode
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 48 -                                            30-Jan-14
+
+         Table: tblTotals
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblTotals_local                       tblTotals
+
+           Attached Table    tblTotals
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxTotals                         idxTotals
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrProfile                        ptrProfile
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ClockedTotal                      ClockedTotal
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: HolTotal                          HolTotal
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: VacTotal                          VacTotal
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: SickTotal                         SickTotal
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: PTOTotal                          PTOTotal
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: JuryTotal                         JuryTotal
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: BereavementTotal                  BereavementTotal
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: RegularTotal                      RegularTotal
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: OT1                               OT1
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: OT2                               OT2
+                      Data Type: Number (Long)                     int
+
+
+
+
+                                                            - 49 -                                            30-Jan-14
+
+                     Field Name: OT3                               OT3
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Status                            Status
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: TransDateTime                     TransDateTime
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: StationName                       StationName
+
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+                     Field Name: ptrLocation                       ptrLocation
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: PR4Total                          PR4Total
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: PR5Total                          PR5Total
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: PR6Total                          PR6Total
+                      Data Type: Number (Long)                     int
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 50 -                                            30-Jan-14
+
+         Table: tblTransactions
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblTransactions_local                 tblTransactions
+
+           Attached Table    tblTransactions
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+                             Relationship or Constraint Failed to Upsize: Server Error 1785:
+                             Introducing FOREIGN KEY constraint 'tblTransactions_FK04' on table
+                             'tblTransactions' may cause cycles or multiple cascade paths. Specify
+                             ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other
+                             FOREIGN KEY constraints.
+                             Server Error 1750: Could not create constraint. See previous errors.
+
+         Fields
+                                Microsoft Access                     SQL Server
+
+                     Field Name: idxTransaction                    idxTransaction
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrProfile                        ptrProfile
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: Status                            Status
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: TransDate                         TransDate
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: CalcAsTransDate                   CalcAsTransDate
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: OnTimeStatus                      OnTimeStatus
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: OnTimeAmount                      OnTimeAmount
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: Snapped                           Snapped
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: TransType                         TransType
+
+                      Data Type: Number (Integer)                  smallint
+
+
+                     Field Name: AutoLunchValue                    AutoLunchValue
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ptrDepartment                     ptrDepartment
+
+                      Data Type: Number (Double)                   float
+
+
+                                                            - 51 -                                            30-Jan-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: ptrShift                          ptrShift
+                      Data Type: Number (Double)                   float
+                                                            - 52 -                                            30-Jan-14
+                     Field Name: ptrLocation                       ptrLocation
+                      Data Type: Number (Double)                   float
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: inptrModified                     inptrModified
+                      Data Type: Number (Double)                   float
+                                                            - 53 -                                            30-Jan-14
+                     Field Name: DollarAmount                      DollarAmount
+                      Data Type: Currency                          money
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Field Name: ApprovedBy                        ApprovedBy
+                      Data Type: Number (Double)                   float
+                                                            - 54 -                                            30-Jan-14
+                     Field Name: SuppressLunch                     SuppressLunch
+                      Data Type: Yes/No                            bit
+
+                        Name: tblProfiletblTransactions          tblProfiletblTransactions
+
+                      Fields: ptrProfile                         ptrProfile
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+                        Name: tblShifttblTransactions            tblShifttblTransactions
+
+                      Fields: ptrShift                           ptrShift
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+         Table: tblVacation
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblVacation_local                     tblVacation
+           Attached Table    tblVacation
+                     Name:
+           Aliasing Query:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxVacation                       idxVacation
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ShortDescription                  ShortDescription
+
+                      Data Type: Text(50)                          nvarchar(50)
+
+                     Field Name: LongDescription                   LongDescription
+
+                      Data Type: Text(50)                          nvarchar(50)
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxVacation                        idxVacation
+
+                      Fields: idxVacation                        idxVacation
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 55 -                                            30-Jan-14
+
+         Table: tblWarnings
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblWarnings_local                     tblWarnings
+
+           Attached Table    tblWarnings
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxWarning                        idxWarning
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: PtrAccessUser                     PtrAccessUser
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: EnableTrans                       EnableTrans
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableDaily                       EnableDaily
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: EnableWeekly                      EnableWeekly
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableRunning                     EnableRunning
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableReg                         EnableReg
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: EnableOT1                         EnableOT1
+
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableOT2                         EnableOT2
+                      Data Type: Yes/No                            bit
+
+
+                     Field Name: EnableOT3                         EnableOT3
+
+                      Data Type: Yes/No                            bit
+
+                     Field Name: ValueTrans                        ValueTrans
+
+                      Data Type: Decimal                           decimal
+
+
+                     Field Name: ValueDaily                        ValueDaily
+                      Data Type: Decimal                           decimal
+
+
+
+
+                                                            - 56 -                                            30-Jan-14
+
+                     Field Name: ValueWeekly                       ValueWeekly
+
+                      Data Type: Decimal                           decimal
+
+
+                     Field Name: ValueRunning                      ValueRunning
+                      Data Type: Decimal                           decimal
+
+
+                     Field Name: ValueRegular                      ValueRegular
+
+                      Data Type: Decimal                           decimal
+
+                     Field Name: ValueOT1                          ValueOT1
+
+                      Data Type: Decimal                           decimal
+
+
+                     Field Name: ValueOT2                          ValueOT2
+                      Data Type: Decimal                           decimal
+
+
+                     Field Name: ValueOT3                          ValueOT3
+
+                      Data Type: Decimal                           decimal
+
+                     Field Name: ColorTrans                        ColorTrans
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ColorDaily                        ColorDaily
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ColorWeekly                       ColorWeekly
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: ColorRunning                      ColorRunning
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ColorRegular                      ColorRegular
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ColorOT1                          ColorOT1
+
+                      Data Type: Number (Long)                     int
+
+                     Field Name: ColorOT2                          ColorOT2
+
+                      Data Type: Number (Long)                     int
+
+
+                     Field Name: ColorOT3                          ColorOT3
+                      Data Type: Number (Long)                     int
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 57 -                                            30-Jan-14
+
+         Table: tblWeekly
+
+
+                             Microsoft Access                      SQL Server
+
+               Table Name:   tblWeekly_local                       tblWeekly
+
+           Attached Table    tblWeekly
+                     Name:
+
+          Validation Rule:
+
+                             Timestamp field added to SQL
+                             Server table.
+
+
+         Fields                 Microsoft Access                     SQL Server
+
+                     Field Name: idxWeekly                         idxWeekly
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrProfile                        ptrProfile
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: Date1                             Date1
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date2                             Date2
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: Date3                             Date3
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date4                             Date4
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date5                             Date5
+
+                      Data Type: Date/Time                         datetime
+
+                     Field Name: Date6                             Date6
+
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: Date7                             Date7
+                      Data Type: Date/Time                         datetime
+
+
+                     Field Name: ptrDay1                           ptrDay1
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrDay2                           ptrDay2
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDay3                           ptrDay3
+                      Data Type: Number (Double)                   float
+
+
+
+
+                                                            - 58 -                                            30-Jan-14
+
+                     Field Name: ptrDay4                           ptrDay4
+
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDay5                           ptrDay5
+                      Data Type: Number (Double)                   float
+
+
+                     Field Name: ptrDay6                           ptrDay6
+
+                      Data Type: Number (Double)                   float
+
+                     Field Name: ptrDay7                           ptrDay7
+
+                      Data Type: Number (Double)                   float
+
+
+         Indexes             Microsoft Access                    SQL Server
+
+                        Name: idxWeekly                          idxWeekly
+
+                      Fields: idxWeekly                          idxWeekly
+
+                        Type: DuplicatesOK                       DuplicatesOK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            - 59 -                                            30-Jan-14
