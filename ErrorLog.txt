@@ -1,0 +1,1 @@
+Error 1: SQL DB will not start upon second usage, the program was installed on an external storage device.
