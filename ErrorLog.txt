@@ -1,1 +1,3 @@
 Error 1: SQL DB will not start upon second usage, the program was installed on an external storage device.
+Error 2: SQL Server installation is either corrupt or has been tampered with (Error getting instance ID from name.). 
+         Please uninstall then re-run setup to correct this problem.
